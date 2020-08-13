@@ -1,0 +1,3 @@
+function fetchCountries(){
+    // const url = 
+}
