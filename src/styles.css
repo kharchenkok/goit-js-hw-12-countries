@@ -25,6 +25,10 @@ body {
   flex-direction: column;
   
 }
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+}
 .input-lable{
   margin-bottom: 20px;
 }
