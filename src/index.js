@@ -1,4 +1,5 @@
 import './styles.css';
+import debounce from 'lodash.debounce'
 import fetchCountries from './fetchCountries';
 
 const refs={
@@ -12,4 +13,4 @@ const searchCountries = function(e){
 }
 
 
-refs.userInput.addEventListener('input', searchCountries)
+refs.userInput.addEventListener('input', debounce(searchCountries,500))
