@@ -2,16 +2,14 @@ import './styles.css';
 import debounce from 'lodash.debounce'
 import fetchCountries from './js/fetchCountries';
 import { createElements } from './js/createElements';
+import refs from './js/refs';
 
 
-const refs={
-    userInput:document.querySelector('#country-input')
-}
-console.log(refs.userInput);
 
 const searchCountries = function(e){
-    console.log(e.target.value);
-    fetchCountries(e.target.value).then((data) => createElements(data))
+    fetchCountries(e.target.value).then((data) => {
+        createElements(data)})
+    
 }
 
 
